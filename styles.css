@@ -18,7 +18,6 @@ body {
   flex-direction: column;
   justify-content: space-between; /* Adjust spacing between elements */
   align-items: center; /* Center the form */
-  height: 500px; /* Fixed height to balance the spacing */
   border: 2px solid #4CAF50; /* Green border around the whole box */
 }
 
@@ -32,13 +31,30 @@ body {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
+  text-decoration: underline; /* Add underline to title */
+  margin-bottom: 20px; /* Adjust the margin to bring the title closer to the inputs */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items with equal space */
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  font-size: 18px; /* Increased font size for labels */
+  color: #444;
+  text-align: left;
+  width: 30%; /* Ensure labels have consistent width */
+  font-weight: 500;
 }
 
 .converter input {
-  width: 80%; /* Smaller input boxes */
-  max-width: 350px; /* Limit max width to ensure they aren't too large */
+  width: 60%; /* Adjust the width of the input box */
   padding: 12px;
-  margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 16px;
@@ -52,14 +68,10 @@ body {
   outline: none;
 }
 
-.converter label {
-  font-size: 16px;
+.unit {
+  font-size: 18px; /* Increased font size for units */
   color: #444;
-  text-align: left;
-  display: block;
-  margin-bottom: 4px; /* Reduced margin between label and input */
-  font-weight: 500;
-  position: relative;
+  margin-left: 10px;
 }
 
 .converter label::after {
@@ -94,8 +106,17 @@ body {
     font-size: 28px;
   }
 
+  .input-container {
+    flex-direction: column; /* Stack inputs vertically on smaller screens */
+    align-items: flex-start;
+  }
+
   .converter input {
     font-size: 16px;
     width: 90%; /* More space for inputs on smaller screens */
+  }
+
+  .unit {
+    margin-left: 0; /* Remove margin on smaller screens */
   }
 }
