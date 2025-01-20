@@ -11,14 +11,14 @@ body {
   max-width: 600px; /* Larger width */
   margin: 0 auto;
   padding: 40px;
-  border-radius: 50px; /* Rectangular shape */
+  border-radius: 50px; /* Rounded corners */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   background-color: #ffffff; /* White background */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* ALter the gap between elements */
+  justify-content: space-between; /* Adjust the gap between elements */
   align-items: center; /* Center the form */
-  border: 5px solid #0D51AB; /* border color */
+  border: 5px solid #0D51AB; /* Blue border */
 }
 
 .converter:hover {
@@ -27,12 +27,12 @@ body {
 
 .converter h1 {
   margin: 0;
-  color: #2d3e50; /* Text color */
+  color: #2d3e50; /* Dark text color for contrast */
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
-  text-decoration: underline; /* Add underline to title */
-  margin-bottom: 20px; /* Title adjustent */
+  text-decoration: underline; /* Underline the title */
+  margin-bottom: 20px; /* Adjust space below the title */
 }
 
 .input-container {
@@ -48,36 +48,38 @@ body {
   font-size: 18px; /* Font size for labels */
   color: #444;
   text-align: left;
-  width: 30%; /* Labels width */
+  width: 30%; /* Label width */
   font-weight: 500;
-  position: relative; 
+  position: relative; /* For positioning the underline */
+}
+
+/* Ensure the underline is only beneath the label text */
+.converter label::after {
+  content: ''; /* Create the underline */
+  display: block;
+  width: 100%; /* Full width of the label's text */
+  height: 2px;
+  background-color: #0D51AB; /* Blue underline */
+  position: absolute;
+  bottom: -4px; /* Position the underline just below the label's text */
+  left: 0;
 }
 
 .converter input {
-  width: 60%; /* Input box */
+  width: 60%; /* Input box width */
   padding: 12px;
-  border: 2px solid #0D51AB; /* Border color */
+  border: 2px solid #0D51AB; /* Input border color */
   border-radius: 8px;
   font-size: 16px;
-  background-color: #f1f9f9; /* Background color */
+  background-color: #f1f9f9; /* Background color for input */
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Change border color and background on input focus */
 .converter input:focus {
   border-color: #0D51AB; 
   background-color: #e7f7f7; 
   outline: none;
-}
-
-.converter label::after {
-  content: ''; /* Underline */
-  display: block;
-  width: 70%;  /* Width of label */
-  height: 2px;
-  background-color: #0D51AB; /* blue underline */
-  position: absolute;
-  bottom: -4px; /* Position of the line */
-  left: 0;
 }
 
 .unit {
