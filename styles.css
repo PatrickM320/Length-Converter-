@@ -57,7 +57,7 @@ body {
 .converter label::after {
   content: ''; /* Create the underline */
   display: block;
-  width: 100%; /* Full width of the label's text */
+  width: 60%; /* Full width of the label's text */
   height: 2px;
   background-color: #0D51AB; /* Blue underline */
   position: absolute;
