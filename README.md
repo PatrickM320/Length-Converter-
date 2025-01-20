@@ -36,6 +36,10 @@ For the design I used CodePen, which helped to build the interface and visualise
 For the project development of the Length converter application, I used a scrum project management approach, being an agile framework as I used the sprints as best practice with this style. The scrum method allows the team to collaborate efficiently and allows regular feedback and testing to help the application develop successfully, the stages of the approach included sprint planning, design, development testing and a sprint review. 
 Each sprint lasted 1 week and was focused on improving the previous issues discussed after a review of the current app's status and development. Using the sprint reviews to gather the user's feedback helped to progress the application and improve the app in a thorough process. I was able to prioritise improvements with a clear structure and efficient manner with the help of a Kanban board used to track the progress. Using this for visualising the workflow with clearly defined stories and the items which were in backlog was key to success. The stories were broken down into smaller tasks and these were completed within sprints within a week our goal between improvements. This board gave the team a clear vision and was able to hold people accountable and set the standards for what we needed to achieve within each Sprint.
 
+/*INSTER IMAGE*/
+
+With a visual workflow in place of the Kanban board is easy to track the overall status of the development and able to share with the team a clear visual for the next sprint. The transparency within the team with clear plans and vision before reaching sprint helps with accountability and the ability to regularly assess how the project was progressing towards the Sprint goals. The continuous flow of tasks moves from one area to another in the 3 sections of the board including backlog, in progress and complete. For example in one of the unit testing phases it was moved from backlog to in progress during the sprint so when the team met we knew what needed to be prioritised in that sprint. 
+
 
 
 
