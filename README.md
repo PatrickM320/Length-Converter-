@@ -25,6 +25,11 @@ Non-Functional Requirements:
 ## Design
 For the design I used CodePen, which helped to build the interface and visualise what I intended to build. With access to the code and able to visualise what I was building as a use of trial and error to improve the application throughout the  development phase. I chose this design after altering the code to keep a simple look but also a professional style with the colour of the outline of the box  I focussed on aiming that the colour scheme used met requirements for accessibility through following Web AIM accessibility testing services which gave me a contrast score of 7.45:1, which passes all test for text and graphical objects and UI components. Through user feedback on initial prototypes of the app, I changed the code and altered the shapes, colours and functionality of the app so it is fit for purpose and meets user requirements gathered from scientists and manufacturing who will need to use this application.
 
+## Project Management 
+
+For the project development of the Length converter application, I used a scrum project management approach, being an agile framework as I used the sprints as best practice with this style. The scrum method allows the team to collaborate efficiently and allows regular feedback and testing to help the application develop successfully, the stages of the approach included sprint planning, design, development testing and a sprint review. 
+Each sprint lasted 1 week and was focused on improving the previous issues discussed after a review of the current app's status and development. Using the sprint reviews to gather the user's feedback helped to progress the application and improve the app in a thorough process. I was able to prioritise improvements with a clear structure and efficient manner with the help of a Kanban board used to track the progress. Using this for visualising the workflow with clearly defined stories and the items which were in backlog was key to success. The stories were broken down into smaller tasks and these were completed within sprints within a week our goal between improvements. This board gave the team a clear vision and was able to hold people accountable and set the standards for what we needed to achieve within each Sprint.
+
 
 
 
