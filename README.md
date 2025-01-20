@@ -10,16 +10,25 @@ Inches, centimetres, and meters have been used here as in the pharmaceutical ind
 
 ## Application Requirements 
 Functional Requirements:
+
 •	Length Conversions – The application must convert between Inches, Centimetres, and Metres.
+
 •	User Input Handling – The application must allow users to input any numerical values for lengths in any of the lengths.
+
 •	Error Handling – User input must be validated to ensure it is a valid number. Errors should be displayed for invalid inputs such as negative numbers.
+
 •	User Interface – Real-Time Conversion – The application must perform the conversions and display the results immediately after the user enters a value, providing real-time feedback.
 
 Non-Functional Requirements:
+
 •	Performance – The application must load quickly and perform real-time conversions without noticeable delays.
+
 •	Compatibility – The application must be compatible with major browsers and work seamlessly on various devices, including desktops and laptops.
+
 •	User Interface- The Responsive Design UI ensures the app adapts seamlessly to different screen sizes, providing an optimal experience. 
+
 •	Usability – The application must have a clear, an easy-to-use interface, to ensure that users can quickly input and convert lengths correctly.
+
 •	Reliability – The application must provide accurate length conversions between Inches, Centimetres, and Metres.
 
 ## Design
