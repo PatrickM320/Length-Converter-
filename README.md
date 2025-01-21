@@ -55,14 +55,14 @@ If it is not installed enter the following:
 
 2. Ensure npm is installed
 
-    ```sh
+   ```sh
    npm -v
    ```
 
 3. Clone the repository:
 
    ```sh
-   git clone https://https://patrickm320.github.io/Length-Converter-.git
+   git clone https://https://patrickm320.github.io/Length-Converter.git
    ```
    
 4. Run the unit tests by entering the following:
