@@ -42,7 +42,7 @@ Each sprint lasted 1 week and was focused on improving the previous issues discu
 With a visual workflow in place of the Kanban board is easy to track the overall status of the development and able to share with the team a clear visual for the next sprint. The transparency within the team with clear plans and vision before reaching sprint helps with accountability and the ability to regularly assess how the project was progressing towards the Sprint goals. The continuous flow of tasks moves from one area to another in the 3 sections of the board including backlog, in progress and complete. For example in one of the unit testing phases it was moved from backlog to in progress during the sprint so when the team met we knew what needed to be prioritised in that sprint. 
 
 ### Installation
-1- Ensire node is installed:
+1- Ensure node is installed:
 
    ```sh
    node -v
