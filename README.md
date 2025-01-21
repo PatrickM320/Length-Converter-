@@ -71,6 +71,21 @@ If it is not installed enter the following:
    npm test
    ```
 
+### Develoment Process
+The Length converter application was developed by following modern web development practices, this app was designed for manufacturing and the scientific departments of the pharmaceutical industry it will be used in, The tools are designed for easy use and accurate conversions between Inches, centimetres and meters, accommodating the global standards required in the labs and manufacturing areas.
+
+### Technical Implementation
+The application was built using HTML, CSS and JavaScript to prioritise performance responsiveness and usability. JavaScript is used to manage real-time unit conversions to ensure an efficient interaction across different measurements. The design is responsive and implemented to allow compatibility with all devices, ensuring consistent functionality in the labs or any manufacturing areas on any device.
+
+Testing of the application was completed with iterative prototypes, using CodePen to visualise the interface and alter the design. These changes were managed to ensure compliance such as WebAIM accessibility until a 7.45;1, which meets all standards for accessibility of text, graphical objects and UI requirements.  With sprints from feedback, this was managed and improved to meet the required standards. 
+
+### Test-driven development 
+To ensure the app's reliability, the development followed a Test-Drive development method. Unit testing using Jest to validate the core functionalities like length conversion, and puppeteer end-to-end tests were used to ensure that the conversions were real-time and accurate. The testing was thorough to ensure the performance of the applications and reliability meeting the standards required in the pharmaceutical industry. 
+
+### Issue Management and Sequential Development
+The development process used a linear approach to prioritize the features and any bugs based on the needs of the users in the pharmaceutical industry. High-priority tasks with the code conversion logic were completed first to help establish functionality and then the UI to improve error handling. The initial sprints focused on implementing core features, whilst the sprints later on in the project were used to address the apps performance, usability and accessibility.  
+
+
 
 
 
