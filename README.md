@@ -85,19 +85,14 @@ To ensure the app's reliability, the development followed a Test-Drive developme
 ### Issue Management and Sequential Development
 The development process used a linear approach to prioritize the features and any bugs based on the needs of the users in the pharmaceutical industry. High-priority tasks with the code conversion logic were completed first to help establish functionality and then the UI to improve error handling. The initial sprints focused on implementing core features, whilst the sprints later on in the project were used to address the apps performance, usability and accessibility.  
 
- 
+
+### Testing
+
+ ![image](https://github.com/user-attachments/assets/b3073c76-1e32-4f73-a323-de35ce6a4d01)
 
 
-|     Test ID      |     Requirement               |     Test Case                                 |     Test Data    |     Expected Result                                 |     Actual Result                               |     Status    |
-|------------------|-------------------------------|-----------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------|---------------|
-|     Test_01      |     Length Conversion         |     Convert from Inches to Centimetres        |    10            |     Centimetres field displays `25.40`              |     25.40                                       |     Pass      |
-|     Test_02      |     Length Conversion         |     Convert from Inches to Metres             |    10            |     Metres field displays `0.254`                   |     0.254                                       |     Pass      |
-|     Test_05      |     Length Conversion         |     Convert from Metres to Inches             |    1             |     Inches field displays `39.37`                   |     39.37                                       |     Pass      |
-|     Test_08      |     Real-Time Conversion      |     Automatic updates across all fields       |    20            |     Centimetres = `50.80`, Metres = `0.508`         |     Updates as expected                         |     Pass      |
-|     Test_09      |     UI/UX                     |     Responsive design compatibility           |    N/A           |     App remains functional and layout adjusts       |     Responsive                                  |     Pass      |
-|     Test_11      |     Real-Time Conversion      |     Performance during rapid input changes    |    Multiple      |     Values update immediately without delay         |     Immediate updates                           |     Pass      |
-|     Test_12      |     Compatibility             |     Works on different devices and browsers   |    N/A           |     App loads and functions across all platforms    |     Works seamlessly                            |     Pass      |
-|     Test_13      |     Reliability               |     Ensure consistent conversion accuracy     |    Various       |     Outputs match previous results                  |     Consistently accurate                       |     Pass      |
+
+
 
 
 
