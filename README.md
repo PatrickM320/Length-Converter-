@@ -106,7 +106,7 @@ With testing the ode being an important part of the project, testing agasint the
 
 ![image](https://github.com/user-attachments/assets/6c119889-5b35-4ebf-85c3-3f05caaca539)
 
-
+I put the Length converter application in googles lighthouse tool and it came back with a  score of 100, therefore showing it meets accessibility requirements which is was always a major focus in the development. This shows the apps ease of use and durability, it also adheres to the standards of the pharmaceutical industry with a high accessibility. With a 100 score for performance implies the importance of the focus on the efforts in the rapid loading times we worked on. As well as the maximum score for not only these 2 but the high best practice score shows how this app the resource allocation in our sprints were effective to reach such a high score. However, the lowest score here being 90 for the applications SEO means that the app is efficient for search engines, meaning that it will be easily accesses and the design is consistent with devices. 
 
 
 
