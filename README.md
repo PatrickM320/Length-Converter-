@@ -88,7 +88,13 @@ The development process used a linear approach to prioritize the features and an
 
 ### Testing
 
+With testing the ode being an important part of the project, testing agasint the componnets and aims of the completion of the app which was set at the begging of the project to ensure the application works as intended, I have completed a test for each requirement:
+
  ![image](https://github.com/user-attachments/assets/b3073c76-1e32-4f73-a323-de35ce6a4d01)
+
+
+ 
+![image](https://github.com/user-attachments/assets/ecafbbe5-a187-43b2-a6d4-c2d81bdf534c)
 
 
 
