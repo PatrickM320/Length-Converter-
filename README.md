@@ -7,7 +7,7 @@ By creating and implementing the Length converter application for my workplace, 
 * Centimetres 
 * Meters
   
-Inches, centimetres, and meters have been used here as in the pharmaceutical industry these will offer flexible measurement options for global standards to ensure accurate and standard product measurements across different regions 
+Inches, centimetres, and meters have been used here as in the pharmaceutical industry these will offer flexible measurement options for global standards to ensure accurate and standard product measurements across different areas
 
 ## Application Requirements 
 
