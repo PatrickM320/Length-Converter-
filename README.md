@@ -85,18 +85,16 @@ To ensure the app's reliability, the development followed a Test-Drive developme
 ### Issue Management and Sequential Development
 The development process used a linear approach to prioritize the features and any bugs based on the needs of the users in the pharmaceutical industry. High-priority tasks with the code conversion logic were completed first to help establish functionality and then the UI to improve error handling. The initial sprints focused on implementing core features, whilst the sprints later on in the project were used to address the apps performance, usability and accessibility.  
 
+|     Test ID      |    Test Case                                         |     Input                          |    Expected Result                    |             Test Type             |       Status        |
+|                  |    Convert inches to centimetres and metres          |     Input: 10 in Inches            |   Centimetres: 25.40 & Metres: 0.254  |             Unit Test             |       Pass          |   
+|                  |    Convert centimetres to inches and metres          |                                    |                                       |                                   |                     |           
+|                  |    Convert metres to inches and centimetres          |                                    |                                       |                                   |                     |    
+|                  |    Convert centimetres to inches and metres          |                                    |                                       |                                   |                     |     
+|                  |    Convert centimetres to inches and metres          |                                    |                       |                                   |                     |     
+|                  |    Convert centimetres to inches and metres          |                                    |                       |                                   |                     |       
+|                  |    Convert centimetres to inches and metres          |                                    |                       |                                   |                     |       
 
 
-Test ID	Requirement	Test Case	Test Steps	Test Data	Expected Result	Actual Result	Status
-Test_01	Length Conversion	Convert from Inches to Centimetres	Input value in the Inches box	10	Centimetres field displays 25.40	25.40	Complete
-Test_02	Length Conversion	Convert from Inches to Metres	Input value in the Inches box	10	Metres field displays 0.254	0.254	Complete
-Test_03	Length Conversion	Convert from Centimetres to Inches	Input value in the Centimetres box	100	Inches field displays 39.37	39.37	Complete
-Test_04	Length Conversion	Convert from Centimetres to Metres	Input value in the Centimetres box	100	Metres field displays 1.00	1.00	Complete
-Test_05	Length Conversion	Convert from Metres to Inches	Input value in the Metres box	1	Inches field displays 39.37	39.37	Complete
-Test_06	Length Conversion	Convert from Metres to Centimetres	Input value in the Metres box	1	Centimetres field displays 100.00	100.00	Complete
-Test_07	Error Handling	Handle invalid input (e.g., negative numbers)	Input negative value in any field	-10	Error displayed, no changes to other fields	Error shown	Complete
-Test_08	Real-Time Conversion	Automatic updates between related fields	Input value in one box and observe changes	20 Inches	Updates to centimetres (50.80) and metres (0.508) automatically	Updates as expected	Complete
-Test_09	UI/UX	Responsive Design Compatibility	Resize browser to small screen size	N/A	App adjusts layout and remains functional	Responsive	Complete
 
 
 
