@@ -42,7 +42,7 @@ Each sprint lasted 1 week and was focused on improving the previous issues discu
 
 With a visual workflow in place of the Kanban board is easy to track the overall status of the development and able to share with the team a clear visual for the next sprint. The transparency within the team with clear plans and vision before reaching sprint helps with accountability and the ability to regularly assess how the project was progressing towards the Sprint goals. The continuous flow of tasks moves from one area to another in the 3 sections of the board including backlog, in progress and complete. For example in one of the unit testing phases it was moved from backlog to in progress during the sprint so when the team met we knew what needed to be prioritised in that sprint. 
 
-### Installation
+## Installation
 1- Ensure node is installed:
 
    ```sh
@@ -72,23 +72,23 @@ If it is not installed enter the following:
    npm test
    ```
 
-### Develoment Process
+## Develoment Process
 The Length converter application was developed by following modern web development practices, this app was designed for manufacturing and the scientific departments of the pharmaceutical industry it will be used in, The tools are designed for easy use and accurate conversions between Inches, centimetres and meters, accommodating the global standards required in the labs and manufacturing areas.
 
-### Technical Implementation
+## Technical Implementation
 The application was built using HTML, CSS and JavaScript to prioritise performance responsiveness and usability. JavaScript is used to manage real-time unit conversions to ensure an efficient interaction across different measurements. The design is responsive and implemented to allow compatibility with all devices, ensuring consistent functionality in the labs or any manufacturing areas on any device.
 
 Testing of the application was completed with iterative prototypes, using CodePen to visualise the interface and alter the design. These changes were managed to ensure compliance such as WebAIM accessibility until a 7.45;1, which meets all standards for accessibility of text, graphical objects and UI requirements.  With sprints from feedback, this was managed and improved to meet the required standards. 
 
-### Test-driven development 
+## Test-driven development 
 To ensure the app's reliability, the development followed a Test-Drive development method. Unit testing using Jest to validate the core functionalities like length conversion, and puppeteer end-to-end tests were used to ensure that the conversions were real-time and accurate. The testing was thorough to ensure the performance of the applications and reliability meeting the standards required in the pharmaceutical industry. 
 
-### Issue Management and Sequential Development
+## Issue Management and Development
 The development process used a linear approach to prioritize the features and any bugs based on the needs of the users in the pharmaceutical industry. High-priority tasks with the code conversion logic were completed first to help establish functionality and then the UI to improve error handling. The initial sprints focused on implementing core features, whilst the sprints later on in the project were used to address the apps performance, usability and accessibility.  
 
-### The Application and code
+## The Application and code
 
-# Convert from Inches-Centimetres 
+## Convert from Inches-Centimetres 
 Input: 10 inches
 
 ```
@@ -99,7 +99,7 @@ Input: 10 inches
 * Output: 25.40 (rounded to 2 decimal places)
 
   
-# Convert from Centimetres- Inches
+### Convert from Centimetres- Inches
 Input=10m
 ```
 inchesInput.value = roundToTwoDecimals(value * 39.3701);
@@ -109,7 +109,7 @@ inchesInput.value = roundToTwoDecimals(value * 39.3701);
 * Output: 3.94 (rounded to 2 decimal places)
 
 
-# Convert from Meter- Inches
+### Convert from Meter- Inches
 Input=10m
 
 * Formula: Inches=Metres×39.3701Inches=Metres×39.3701
@@ -117,19 +117,19 @@ Input=10m
 * Output: 393.70 (rounded to 2 decimal places)
 
 
-### Files used 
+## Files used 
 
 
 
 
-### Testing
+## Testing
 
 With testing the ode being an important part of the project, testing agasint the componnets and aims of the completion of the app which was set at the begging of the project to ensure the application works as intended, I have completed a test for each requirement:
 
  ![image](https://github.com/user-attachments/assets/b3073c76-1e32-4f73-a323-de35ce6a4d01)
 
 
- ### Unit Testing
+ ## Unit Testing
 
 
 
@@ -137,7 +137,7 @@ With testing the ode being an important part of the project, testing agasint the
 
 
 
-### Accessibility 
+## Accessibility 
 
 
 ![image](https://github.com/user-attachments/assets/6c119889-5b35-4ebf-85c3-3f05caaca539)
