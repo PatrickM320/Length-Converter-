@@ -7,7 +7,9 @@
   "scripts": {
     "testConverter": "jest /converter.test.js",
     "testInput": "jest /input.test.js",
-"testFunc": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --coverage --verbose logic.test.js"  },
+    "testFunc": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --coverage --verbose logic.test.js",
+    "test": "react-scripts test --env=jsdom"
+  },
   "author": "Patrick Mbousia",
   "license": "MIT",
   "devDependencies": {
