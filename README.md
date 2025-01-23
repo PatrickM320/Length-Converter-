@@ -87,8 +87,10 @@ To ensure the app's reliability, the development followed a Test-Drive developme
 The development process used a linear approach to prioritize the features and any bugs based on the needs of the users in the pharmaceutical industry. High-priority tasks with the code conversion logic were completed first to help establish functionality and then the UI to improve error handling. The initial sprints focused on implementing core features, whilst the sprints later on in the project were used to address the apps performance, usability and accessibility.  
 
 ### The Application and code
+```
+  centimetresInput.value = roundToTwoDecimals(value * 2.54);
+```
 
-centimetresInput.value = roundToTwoDecimals(value * 2.54);
 Outputs: 25.40 Centimetres
 Formula: Centimetres= Inches×2.54Centimetres=Inches×2.54
 Calculation: 10×2.54=25.40 cm10×2.54=25.40 cm
