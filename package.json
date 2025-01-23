@@ -1,24 +1,20 @@
 {
   "name": "Length-Converter-",
   "version": "1.0.0",
-  "description": "Length Converter App",
+  "description": "A Length Converter",
   "main": "script.js",
-  "type": "module",
-  "scripts": {
-    "testSmoke": "jest /smoke.test.js",
-    "testConverter": "jest /converter.test.js",
-    "testInput": "jest /input.test.js",
-    "testFunc": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --coverage --verbose logic.test.js",
-    "test": "react-scripts test --env=jsdom"
+  "directories": {
+    "test": "tests"
   },
-  "author": "Patrick Mbousia",
-  "license": "MIT",
   "devDependencies": {
     "jest": "^29.7.0",
-    "jsdom": "^24.1.0"
+    "jest-environment-jsdom": "^29.7.0"
   },
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "puppeteer": "^24.1.0"
+  "scripts": {
+    "test": "jest",
+    "testSmoke": "jest smoke.test.js"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }
