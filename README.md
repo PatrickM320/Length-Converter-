@@ -119,8 +119,8 @@ Input=10m
 
 ## Files to run the app
 * index.html
-*script.js
-*styles.css
+* script.js
+* styles.css
 
 ## Filesfor testing
 * Input.test.js
