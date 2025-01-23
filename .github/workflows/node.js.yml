@@ -19,13 +19,22 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16.x'  # You can specify the Node version you need
+        node-version: '16.x'
+
+    - name: Print Node.js version
+      run: node --version
+
+    - name: Print npm version
+      run: npm --version
+
+    - name: Print working directory
+      run: pwd
+
+    - name: List directory contents
+      run: ls -alh
 
     - name: Install Dependencies
-      run: npm install  # This installs your project dependencies
+      run: npm ci
 
     - name: Run Tests
-      run: npm test  # This will run your tests
-
-    - name: Build Project
-      run: npm run build  # If you have a build step
+      run: npm test
