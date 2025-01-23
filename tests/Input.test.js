@@ -1,6 +1,28 @@
-const { roundToTwoDecimals, convertFromInches, convertFromCentimetres, convertFromMetres, updateAllConversions } = require('../script');
+const { 
+  roundToTwoDecimals, 
+  convertFromInches, 
+  convertFromCentimetres, 
+  convertFromMetres, 
+  updateAllConversions 
+} = require('../script');
 
 describe('Input Test', () => {
+  beforeAll(() => {
+    // Mock the DOM elements
+    global.document = {
+      getElementById: jest.fn((id) => ({
+        value: '' // Directly set the value property
+      }))
+    };
+    
+    // Mock getElementById for specific elements (no setter to avoid recursion)
+    jest.spyOn(document, 'getElementById').mockImplementation((id) => {
+      return {
+        value: '' // Directly return the value
+      };
+    });
+  });
+
   test('roundToTwoDecimals should round to two decimal places', () => {
     expect(roundToTwoDecimals(2.345)).toBe('2.35');
     expect(roundToTwoDecimals(1.1)).toBe('1.10');

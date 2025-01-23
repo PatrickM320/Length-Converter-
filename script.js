@@ -1,37 +1,38 @@
-// Round a number to two decimals
-function roundToTwoDecimals(num) {
-  return (Math.round(num * 100) / 100).toFixed(2);
+function roundToTwoDecimals(value) {
+  return value.toFixed(2); // Round to two decimal places
 }
 
-// Converts inches to centimeters and meters, and returns the results
 function convertFromInches(value) {
   return {
-    centimetres: roundToTwoDecimals(value * 2.54), // Inches to centimeters
-    metres: roundToTwoDecimals(value * 0.0254),    // Inches to meters
+    inches: roundToTwoDecimals(value),
+    centimetres: roundToTwoDecimals(value * 2.54),
+    metres: roundToTwoDecimals(value * 0.0254),
   };
 }
 
-// Converts centimeters to inches and meters, and returns the results
 function convertFromCentimetres(value) {
   return {
-    inches: roundToTwoDecimals(value / 2.54),      // Centimeters to inches
-    metres: roundToTwoDecimals(value / 100),       // Centimeters to meters
+    inches: roundToTwoDecimals(value / 2.54),
+    centimetres: roundToTwoDecimals(value),
+    metres: roundToTwoDecimals(value / 100),
   };
 }
 
-// Converts meters to inches and centimeters, and returns the results
 function convertFromMetres(value) {
   return {
-    inches: roundToTwoDecimals(value * 39.3701),   // Meters to inches
-    centimetres: roundToTwoDecimals(value * 100),  // Meters to centimeters
+    inches: roundToTwoDecimals(value * 39.3701),
+    centimetres: roundToTwoDecimals(value * 100),
+    metres: roundToTwoDecimals(value),
   };
 }
 
-// Update all conversions based on input, returns converted values
-function updateAllConversions(value, unit) {
+function updateAllConversions(value, unit) { 
   const parsedValue = parseFloat(value); // Parse the value into a floating-point number
   if (isNaN(parsedValue)) {
-    // Return empty values if the input is invalid
+    // Clear all fields if the value is invalid
+    document.getElementById('inches').value = '';
+    document.getElementById('centimetres').value = '';
+    document.getElementById('metres').value = '';
     return {
       inches: '',
       centimetres: '',
@@ -39,54 +40,43 @@ function updateAllConversions(value, unit) {
     };
   }
 
+  let inches = '';
+  let centimetres = '';
+  let metres = '';
+
   // Determine the unit and convert
   if (unit === 'inches') {
-    return convertFromInches(parsedValue);
+    inches = roundToTwoDecimals(parsedValue); // Store the converted inches
+    centimetres = roundToTwoDecimals(parsedValue * 2.54); // Inches to centimeters
+    metres = roundToTwoDecimals(parsedValue * 0.0254); // Inches to meters
   } else if (unit === 'centimetres') {
-    return convertFromCentimetres(parsedValue);
+    inches = roundToTwoDecimals(parsedValue / 2.54); // Centimeters to inches
+    centimetres = roundToTwoDecimals(parsedValue); // Just use the value as is
+    metres = roundToTwoDecimals(parsedValue / 100); // Centimeters to meters
   } else if (unit === 'metres') {
-    return convertFromMetres(parsedValue);
-  }
-}
-
-// Initialize the event listeners (to be called after the DOM is ready)
-function initializeEventListeners() {
-  const inchesInput = document.getElementById('inches');
-  const centimetresInput = document.getElementById('centimetres');
-  const metresInput = document.getElementById('metres');
-
-  if (!inchesInput || !centimetresInput || !metresInput) {
-    throw new Error("One or more DOM elements are missing");
+    inches = roundToTwoDecimals(parsedValue * 39.3701); // Meters to inches
+    centimetres = roundToTwoDecimals(parsedValue * 100); // Meters to centimeters
+    metres = roundToTwoDecimals(parsedValue); // Just use the value as is
   }
 
-  inchesInput.addEventListener('input', (e) => {
-    const result = updateAllConversions(e.target.value, 'inches');
-    inchesInput.value = result.inches;
-    centimetresInput.value = result.centimetres;
-    metresInput.value = result.metres;
-  });
+  // Set the values in the DOM elements
+  document.getElementById('inches').value = inches;
+  document.getElementById('centimetres').value = centimetres;
+  document.getElementById('metres').value = metres;
 
-  centimetresInput.addEventListener('input', (e) => {
-    const result = updateAllConversions(e.target.value, 'centimetres');
-    inchesInput.value = result.inches;
-    centimetresInput.value = result.centimetres;
-    metresInput.value = result.metres;
-  });
-
-  metresInput.addEventListener('input', (e) => {
-    const result = updateAllConversions(e.target.value, 'metres');
-    inchesInput.value = result.inches;
-    centimetresInput.value = result.centimetres;
-    metresInput.value = result.metres;
-  });
+  // Return the converted values so tests can assert them
+  return {
+    inches,
+    centimetres,
+    metres
+  };
 }
 
-// Exports for tests and real-world use
+// Export the functions so they can be used in the test file
 module.exports = {
   roundToTwoDecimals,
   convertFromInches,
   convertFromCentimetres,
   convertFromMetres,
-  updateAllConversions,
-  initializeEventListeners,
+  updateAllConversions
 };
