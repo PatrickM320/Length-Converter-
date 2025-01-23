@@ -88,7 +88,7 @@ The development process used a linear approach to prioritize the features and an
 
 ## The Application and code
 
-## Convert from Inches-Centimetres 
+### Convert from Inches-Centimetres 
 Input: 10 inches
 
 ```
