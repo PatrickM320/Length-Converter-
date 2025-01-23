@@ -90,7 +90,6 @@ The development process used a linear approach to prioritize the features and an
 ```
   centimetresInput.value = roundToTwoDecimals(value * 2.54);
 ```
-
 Outputs: 25.40 Centimetres
 Formula: Centimetres= Inches×2.54Centimetres=Inches×2.54
 Calculation: 10×2.54=25.40 cm10×2.54=25.40 cm
