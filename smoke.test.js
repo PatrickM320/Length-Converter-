@@ -13,4 +13,8 @@ describe('Smoke Test for Length Converter', () => {
             done(e);
         });
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 584bab71d4fbe9d4d0de4f2a64db0e8aafcfaf2f
