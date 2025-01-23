@@ -117,9 +117,14 @@ Input=10m
 * Output: 393.70 (rounded to 2 decimal places)
 
 
-## Files used 
+## Files to run the app
+* index.html
+*script.js
+*styles.css
 
-
+## Filesfor testing
+* Input.test.js
+* converter.test.js
 
 
 ## Testing
