@@ -89,18 +89,6 @@ The development process used a linear approach to prioritize the features and an
 ## The Application and code
 
 ### Convert from Inches-Centimetres 
-Input: 10 inches
-
-```
-  centimetresInput.value = roundToTwoDecimals(value * 2.54);
-```
-* Formula: Centimetres= Inches×2.54Centimetres=Inches×2.54
-* Calculation: 10×2.54=25.40 cm10×2.54=25.40 cm
-* Output: 25.40 (rounded to 2 decimal places)
-
-  
-### Convert from Centimetres- Inches
-
 ```
 // Conversions
     function inchesToCm(inches) {
@@ -111,6 +99,20 @@ Input: 10 inches
 * Calculations= 10 x 2.54=25.49
 * output= 35.40cm
 
+
+### Convert from Centimetres- Metres
+  ```
+   }
+
+    function cmToM(cm) {
+        return cm / 100;
+    }
+ ```
+* Input= 10m
+* Calculations= 10 ÷ 2.54=3.937
+* output= 3.94in
+
+These are just 2 of many conversions, which are showing the maths behind the code to convert the values. Below is the calculations that the code is preforming to convert the value.
 ## Files to run the app
 * index.html
 * script.js
