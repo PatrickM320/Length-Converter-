@@ -124,7 +124,7 @@ Input=10m
 
 ## Filesfor testing
 * Input.test.js
-* converter.test.js
+* smoke.test.js
 
 
 ## Testing
