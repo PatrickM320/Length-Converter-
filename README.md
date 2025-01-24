@@ -103,14 +103,13 @@ The development process used a linear approach to prioritize the features and an
 ### Convert from Centimetres- Metres
   ```
    }
-
     function cmToM(cm) {
         return cm / 100;
     }
  ```
 * Input= 10m
-* Calculations= 10 ÷ 2.54=3.937
-* output= 3.94in
+* Calculations= 10 ÷ 100=0.10
+* output= 0.10m
 
 These are just 2 of many conversions, which are showing the maths behind the code to convert the values. Below is the calculations that the code is preforming to convert the value.
 ## Files to run the app
