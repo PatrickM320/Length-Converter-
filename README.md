@@ -100,22 +100,16 @@ Input: 10 inches
 
   
 ### Convert from Centimetres- Inches
-Input=10m
+
 ```
-inchesInput.value = roundToTwoDecimals(value * 39.3701);
+// Conversions
+    function inchesToCm(inches) {
+        return inches * 2.54;
+    }
 ```
-* Formula: Inches=Centimetres÷2.54Inches=Centimetres÷2.54
-* Calculation: 10÷2.54=3.94 in10÷2.54=3.94 in
-* Output: 3.94 (rounded to 2 decimal places)
-
-
-### Convert from Meter- Inches
-Input=10m
-
-* Formula: Inches=Metres×39.3701Inches=Metres×39.3701
-* Calculation: 10×39.3701=393.70 in10×39.3701=393.70 in
-* Output: 393.70 (rounded to 2 decimal places)
-
+* Input= 10m
+* Calculations= 10 x 2.54=25.49
+* output= 35.40cm
 
 ## Files to run the app
 * index.html
