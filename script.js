@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const centimetresInput = document.getElementById('centimetres');
     const metresInput = document.getElementById('metres');
 
-    // Conversion functions
+    // Conversions
     function inchesToCm(inches) {
         return inches * 2.54;
     }
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return m * 100;
     }
 
-    // Handle the automatic conversion
+    // Automaticly convert
     function convertLength(event) {
         const value = parseFloat(event.target.value);
         
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Convert and update the other fields accordingly
+        // Convert all measurments 
         if (event.target === inchesInput) {
             if (!isNaN(value)) {
                 centimetresInput.value = inchesToCm(value).toFixed(2);
@@ -69,13 +69,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Add event listeners for input events
+    // input events
     inchesInput.addEventListener('input', convertLength);
     centimetresInput.addEventListener('input', convertLength);
     metresInput.addEventListener('input', convertLength);
 });
 
-// Export the functions so they can be used in the test file
+// Export the functions fo tests 
 module.exports = {
   roundToTwoDecimals,
   convertFromInches: function(value) {
@@ -116,17 +116,17 @@ module.exports = {
 
     // Determine the unit and convert
     if (unit === 'inches') {
-      inches = roundToTwoDecimals(parsedValue); // Store the converted inches
+      inches = roundToTwoDecimals(parsedValue); // save converted inches
       centimetres = roundToTwoDecimals(parsedValue * 2.54); // Inches to centimeters
       metres = roundToTwoDecimals(parsedValue * 0.0254); // Inches to meters
     } else if (unit === 'centimetres') {
       inches = roundToTwoDecimals(parsedValue / 2.54); // Centimeters to inches
-      centimetres = roundToTwoDecimals(parsedValue); // Just use the value as is
+      centimetres = roundToTwoDecimals(parsedValue); 
       metres = roundToTwoDecimals(parsedValue / 100); // Centimeters to meters
     } else if (unit === 'metres') {
       inches = roundToTwoDecimals(parsedValue * 39.3701); // Meters to inches
       centimetres = roundToTwoDecimals(parsedValue * 100); // Meters to centimeters
-      metres = roundToTwoDecimals(parsedValue); // Just use the value as is
+      metres = roundToTwoDecimals(parsedValue);
     }
 
     // Return the converted values
