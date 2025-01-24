@@ -125,6 +125,8 @@ Input=10m
 ## Filesfor testing
 * Input.test.js
 * smoke.test.js
+* package.json
+* package-lock.json
 
 
 ## Testing
@@ -133,12 +135,16 @@ With testing the ode being an important part of the project, testing agasint the
 
  ![image](https://github.com/user-attachments/assets/b3073c76-1e32-4f73-a323-de35ce6a4d01)
 
+Another part of testing was to test negative values and also testing letters. Ensuring only numerical figures could be entered into the web application was successful and ensured that only the numerical figures could be entered. This is due to not having negative numbers or letters being involved in length conversion.
 
  ## Unit Testing
 
 
 ![image](https://github.com/user-attachments/assets/03a28127-041b-4f29-a158-fb2b6ef300c7)
 
+The code for the input.test.js for unit testing of the application uses Jest framework, it is used to ensure the functionality of the handling of the numbers converted and also the rounding to 2 decimal places. It contains all code for the conversions whether it be ‘Inchesfromcentimetres’ , ‘metersfromInches’ and the ‘roundtotwodecimals’. The test sets up a fake environment to the to use as a test environment with a pages’ Dom. This is to ensure the functions which could rely on elements only available in a web browser environment. The page completely rebuilds all interactions on the site such as inputting values or using the arrows to make the numbers higher or lower. Each test in specific such as ensuring the values are rounded to 2 decimal places when rounding and converting. The input test also verifies all input if they may be invalid returns empty value sin the boxes.
+
+The smoke.test.js is used to test whether the Length converter web application’s homepage is fully functioning and is accessible for users. The code used Node.js which sends a Get request to the GitHub repository. The test checks the page response in order to confirm the status code it returns is 200. This sis important as it means the page has successfully loaded. The test as a whole acts as a reliability test checking if the site is running and operating on a simple basis. The test needs to ensure the status code is 200 otherwise the test will fail meaning the web application has availability issues. 
 
 
 
@@ -150,6 +156,13 @@ With testing the ode being an important part of the project, testing agasint the
 
 I put the Length converter application in googles lighthouse tool and it came back with a  score of 100, therefore showing it meets accessibility requirements which is was always a major focus in the development. This shows the apps ease of use and durability, it also adheres to the standards of the pharmaceutical industry with a high accessibility. With a 100 score for performance implies the importance of the focus on the efforts in the rapid loading times we worked on. As well as the maximum score for not only these 2 but the high best practice score shows how this app the resource allocation in our sprints were effective to reach such a high score. However, the lowest score here being 90 for the applications SEO means that the app is efficient for search engines, meaning that it will be easily accesses and the design is consistent with devices. 
 
+
+## Evaluation 
+
+The Length converter application was designed for the pharmaceutical industry to use in particular the manufacturing and within the labs to help convert measurements for them quickly and easily. It provides this conversion of all 3 measurements of Inches, centimetres, and meters which it does successfully. The project of building the app was focused on its performance, accessibility, usability, and design.
+
+The Length converter was marked as 100/100 for the performance level highlighting its excellence in how fast the page loads, data handling and also how it manages users' experience on the app for a seamless experience. This all being proved by the Google Lighthouse tool with the highest score.
+For future improvements I would build the app for new iterations have different converters for different measurements, this could develop into an option of which 2 measurements through a drop-down or expand the already built app to showcase ore measurements on one page. This would help improve the work of the pharmaceutical industry to use this app globally bast practice within all areas of the pharmaceutical industry.
 
 
 
