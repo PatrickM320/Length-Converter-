@@ -8,17 +8,17 @@ const {
 
 describe('Input Test', () => {
   beforeAll(() => {
-    // Mock the DOM elements
+    // Create testing elements of wep page
     global.document = {
       getElementById: jest.fn((id) => ({
-        value: '' // Directly set the value property
+        value: '' // set the value property
       }))
     };
     
-    // Mock getElementById for specific elements (no setter to avoid recursion)
+    // create getElementById for testing 
     jest.spyOn(document, 'getElementById').mockImplementation((id) => {
       return {
-        value: '' // Directly return the value
+        value: '' // return the value
       };
     });
   });
