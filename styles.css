@@ -2,23 +2,23 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 50px;
-  background-color: #f1f9f9; /* Light background color */
+  background-color: #f1f9f9; 
   color: #444;
   text-align: center;
 }
 
 .converter {
-  max-width: 600px; /* Larger width */
+  max-width: 600px; /* width */
   margin: 0 auto;
   padding: 40px;
-  border-radius: 50px; /* Rectangular shape */
+  border-radius: 50px; /* shape */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   background-color: #ffffff; /* White background */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* ALter the gap between elements */
+  justify-content: space-between; /* gap between elements */
   align-items: center; /* Center the form */
-  border: 5px solid #0D51AB; /* border color */
+  border: 5px solid #0D51AB; /* border colour */
 }
 
 .converter:hover {
@@ -27,12 +27,12 @@ body {
 
 .converter h1 {
   margin: 0;
-  color: #2d3e50; /* Text color */
+  color: #2d3e50; /* Text colour */
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
-  text-decoration: underline; /* Add underline to title */
-  margin-bottom: 20px; /* Title adjustent */
+  text-decoration: underline; /* Underline title */
+  margin-bottom: 20px; /* Title */
 }
 
 .input-container {
@@ -56,10 +56,10 @@ body {
 .converter input {
   width: 60%; /* Input box */
   padding: 12px;
-  border: 2px solid #0D51AB; /* Border color */
+  border: 2px solid #0D51AB; /* Border coluor */
   border-radius: 8px;
   font-size: 16px;
-  background-color: #f1f9f9; /* Background color */
+  background-color: #f1f9f9; /* Background coluor */
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -98,16 +98,16 @@ body {
   }
 
   .input-container {
-    flex-direction: column; /* Stack inputs vertically on smaller screens */
+    flex-direction: column; /* Stack inputs vertically on smaller devices like phones */
     align-items: flex-start;
   }
 
   .converter input {
     font-size: 16px;
-    width: 90%; /* More space for inputs on smaller screens */
+    width: 90%; /* More space for inputs on smaller devices */
   }
 
   .unit {
-    margin-left: 0; /* Remove margin on smaller screens */
+    margin-left: 0; /* Remove margin */
   }
 }
